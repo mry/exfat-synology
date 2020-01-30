@@ -33,7 +33,7 @@ for arm64 version like ds119j,ds120j,catdrive
 
 ```
 wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_arm64.deb
-dpkg -x /tmp/exfat-1.2.3-1_arm64_arm64.deb /tmp/exfat-fuse/
+dpkg -x /tmp/exfat-fuse_1.2.3-1_arm64.deb /tmp/exfat-fuse/
 cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 ```
 
