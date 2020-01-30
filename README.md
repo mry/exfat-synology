@@ -78,12 +78,12 @@ MOUNTPOINT="/volume1/usbexfat/usbshare$n"
 
 **[ 5 ]** Copy the files from this repository, and override some system files
 ```
-wget -P /tmp/ https://github.com/luckylz2git/exfat-synology/raw/master/mount.sh --no-check-certificate
+wget -P /tmp/ https://github.com/zanjie1999/exfat-synology/raw/master/mount.sh --no-check-certificate
 chmod 755 /tmp/mount.sh
 mv /bin/mount /bin/mount.bin
 mv /tmp/mount.sh /bin/mount
 
-wget -P /tmp/ https://github.com/luckylz2git/exfat-synology/raw/master/synocheckshare.sh --no-check-certificate
+wget -P /tmp/ https://github.com/zanjie1999/exfat-synology/raw/master/synocheckshare.sh --no-check-certificate
 chmod 755 /tmp/synocheckshare.sh
 mv /usr/syno/bin/synocheckshare /usr/syno/bin/synocheckshare.bin
 mv /tmp/synocheckshare.sh /usr/syno/bin/synocheckshare
@@ -93,15 +93,15 @@ mv /tmp/synocheckshare.sh /usr/syno/bin/synocheckshare
 
 **[ 7 ]** Post-Mount automatically functions 
 
-1. Incremental import for DSLR Photos & Videos, visit: [usbsync](https://github.com/luckylz2git/exfat-synology/tree/master/usbsync).
+1. Incremental import for DSLR Photos & Videos, visit: [usbsync](https://github.com/zanjie1999/exfat-synology/tree/master/usbsync).
 
-2. Automatically Rename Photos & Videos, visit: [exifname](https://github.com/luckylz2git/exfat-synology/tree/master/exifname).
+2. Automatically Rename Photos & Videos, visit: [exifname](https://github.com/zanjie1999/exfat-synology/tree/master/exifname).
 
 ##Upgrade
 
 SSH or Telnet:
 ```
-wget -P /tmp/ https://github.com/luckylz2git/exfat-synology/raw/master/upgrade.sh --no-check-certificate
+wget -P /tmp/ https://github.com/zanjie1999/exfat-synology/raw/master/upgrade.sh --no-check-certificate
 chmod 755 /tmp/upgrade.sh
 /tmp/upgrade.sh
 ```
