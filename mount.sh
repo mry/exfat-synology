@@ -23,7 +23,8 @@ if [ -n "$USB" ]; then
                     MOUNTDIR=$(find /volume* -type d | sed -n '1p')"/usbexfat"
                 fi                
             fi
-            MOUNTPOINT="$MOUNTDIR/usbshare$n"
+            #MOUNTPOINT="$MOUNTDIR/usbshare$n"
+            MOUNTPOINT="$6"
             if [ ! -d "$MOUNTPOINT" ]; then
                 mkdir -p "$MOUNTPOINT"
             fi
