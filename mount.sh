@@ -8,8 +8,8 @@ if [ -n "$USB" ]; then
     if [ "$2" == "exfat" ]; then
         m=$(/bin/mount.bin | grep "$5")
         if [ -z "$m" ]; then
-            #n="$6"
-            #n=${n#*/volumeUSB}
+            n="$6"
+            n=${n#*/volumeUSB}
             #n=${n%%/usbshare}
             ##first, get samba shared folder by default
             #MOUNTDIR=$(cat /etc/samba/smb.share.conf | grep 'path=' | grep 'usbexfat')
@@ -24,7 +24,7 @@ if [ -n "$USB" ]; then
             #    fi                
             #fi
             #MOUNTPOINT="$MOUNTDIR/usbshare$n"
-            MOUNTPOINT="/volume1/usbexfat$6"
+            MOUNTPOINT="/volume1/usbexfat$n"
             if [ ! -d "$MOUNTPOINT" ]; then
                 mkdir -p "$MOUNTPOINT"
             fi
