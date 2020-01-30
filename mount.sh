@@ -27,7 +27,7 @@ if [ -n "$USB" ]; then
             #    fi                
             #fi
             #MOUNTPOINT="$MOUNTDIR/usbshare$n"
-            MOUNTPOINT="/volume1/usbexfat/usbshare/$n"
+            MOUNTPOINT="/volume1/usbexfat/$n"
             if [ ! -d "$MOUNTPOINT" ]; then
                 mkdir -p "$MOUNTPOINT"
             fi
