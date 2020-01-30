@@ -21,9 +21,19 @@ synouser --setpw root your_new_root_password
 
 **[ 3 ]** Login NAS via SSH or Telnet, using root account :
 
+for x64 version
+
 ```
 wget -P /tmp/ http://mirrors.kernel.org/ubuntu/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_amd64.deb
 dpkg -x /tmp/exfat-fuse_1.2.3-1_amd64.deb /tmp/exfat-fuse/
+cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
+```
+
+for arm64/arm version like ds119j,ds120j,catdrive
+
+```
+wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_armhf.deb
+dpkg -x /tmp/exfat-fuse_1.2.3-1_armhf.deb /tmp/exfat-fuse/
 cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 ```
 
