@@ -29,11 +29,11 @@ dpkg -x /tmp/exfat-fuse_1.2.3-1_amd64.deb /tmp/exfat-fuse/
 cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 ```
 
-for arm64/arm version like ds119j,ds120j,catdrive
+for arm64 version like ds119j,ds120j,catdrive
 
 ```
-wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_armhf.deb
-dpkg -x /tmp/exfat-fuse_1.2.3-1_armhf.deb /tmp/exfat-fuse/
+wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.3.0-1_arm64.deb
+dpkg -x /tmp/exfat-fuse_1.3.0-1_arm64.deb /tmp/exfat-fuse/
 cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 ```
 
