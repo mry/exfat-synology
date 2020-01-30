@@ -69,7 +69,7 @@ No matter what, the dir /volume*/usbexfat will be created. If it is not shared, 
 
 **P.S.**
 
-If your own mountpoint does not look like /volume1/usbexfat/usbshare[1...n], you need to modify mountpoint in the mount.sh!
+You change mount point in the mount.sh!
 ```
 ...
 MOUNTPOINT="/volume1/usbexfat/usbshare$n"
@@ -82,11 +82,6 @@ wget -P /tmp/ https://github.com/zanjie1999/exfat-synology/raw/master/mount.sh -
 chmod 755 /tmp/mount.sh
 mv /bin/mount /bin/mount.bin
 mv /tmp/mount.sh /bin/mount
-
-wget -P /tmp/ https://github.com/zanjie1999/exfat-synology/raw/master/synocheckshare.sh --no-check-certificate
-chmod 755 /tmp/synocheckshare.sh
-mv /usr/syno/bin/synocheckshare /usr/syno/bin/synocheckshare.bin
-mv /tmp/synocheckshare.sh /usr/syno/bin/synocheckshare
 ```
 
 **[ 6 ]** Now the exfat partition can be automatically mount! And also can eject the disk from DiskStation Webpage.
@@ -110,10 +105,6 @@ chmod 755 /tmp/upgrade.sh
 
 SSH or Telnet:
 ```
-if [ -f /usr/syno/bin/synocheckshare.bin ]; then
-    rm /usr/syno/bin/synocheckshare
-    mv /usr/syno/bin/synocheckshare.bin /usr/syno/bin/synocheckshare
-fi
 if [ -f /bin/mount.bin ]; then
     rm /bin/mount
     mv /bin/mount.bin /bin/mount
