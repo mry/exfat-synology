@@ -24,7 +24,7 @@ synouser --setpw root your_new_root_password
 for x64 version
 
 ```
-wget -P /tmp/ http://mirrors.kernel.org/ubuntu/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_amd64.deb
+wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_amd64.deb
 dpkg -x /tmp/exfat-fuse_1.2.3-1_amd64.deb /tmp/exfat-fuse/
 cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 ```
@@ -32,8 +32,8 @@ cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 for arm64 version like ds119j,ds120j,catdrive
 
 ```
-wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.3.0-1_arm64.deb
-dpkg -x /tmp/exfat-fuse_1.3.0-1_arm64.deb /tmp/exfat-fuse/
+wget -P /tmp/ http://mirrors.ustc.edu.cn/ubuntu-ports/pool/universe/f/fuse-exfat/exfat-fuse_1.2.3-1_arm64.deb
+dpkg -x /tmp/exfat-1.2.3-1_arm64_arm64.deb /tmp/exfat-fuse/
 cp /tmp/exfat-fuse/sbin/mount.exfat-fuse /bin/
 ```
 
